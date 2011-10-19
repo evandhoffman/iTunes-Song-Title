@@ -1,5 +1,62 @@
 // !$*UTF8*$!
 {
+	2091223F144F5BBF00F77377 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 20F57C1F1447787E00BA3DCA /* IPMenulet.h */;
+		name = "IPMenulet.h: 12";
+		rLen = 0;
+		rLoc = 231;
+		rType = 0;
+		vrLen = 302;
+		vrLoc = 0;
+	};
+	20912245144F6B3C00F77377 /* iTunes.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {3239, 6370}}";
+			sepNavSelRange = "{17677, 0}";
+			sepNavVisRange = "{16899, 2133}";
+		};
+	};
+	2091225C144F74B600F77377 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 20912245144F6B3C00F77377 /* iTunes.h */;
+		name = "iTunes.h: 382";
+		rLen = 0;
+		rLoc = 17677;
+		rType = 0;
+		vrLen = 2133;
+		vrLoc = 16899;
+	};
+	2091225D144F74B600F77377 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 20F57C1F1447787E00BA3DCA /* IPMenulet.h */;
+		name = "IPMenulet.h: 15";
+		rLen = 0;
+		rLoc = 275;
+		rType = 0;
+		vrLen = 351;
+		vrLoc = 0;
+	};
+	2091225E144F74B600F77377 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 20F57C201447787E00BA3DCA /* IPMenulet.m */;
+		name = "IPMenulet.m: 45";
+		rLen = 0;
+		rLoc = 964;
+		rType = 0;
+		vrLen = 624;
+		vrLoc = 552;
+	};
+	2091225F144F74B600F77377 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 20F57C201447787E00BA3DCA /* IPMenulet.m */;
+		name = "IPMenulet.m: 50";
+		rLen = 0;
+		rLoc = 1136;
+		rType = 0;
+		vrLen = 765;
+		vrLoc = 480;
+	};
 	20F57C0914474B9700BA3DCA /* iTunes Current Track */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -44,6 +101,50 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
+	20F57C1F1447787E00BA3DCA /* IPMenulet.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {717, 389}}";
+			sepNavSelRange = "{275, 0}";
+			sepNavVisRange = "{0, 351}";
+		};
+	};
+	20F57C201447787E00BA3DCA /* IPMenulet.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {717, 806}}";
+			sepNavSelRange = "{1136, 0}";
+			sepNavVisRange = "{480, 765}";
+		};
+	};
+	20F57C25144789D900BA3DCA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 20F57C201447787E00BA3DCA /* IPMenulet.m */;
+		name = "IPMenulet.m: 26";
+		rLen = 0;
+		rLoc = 482;
+		rType = 0;
+		vrLen = 742;
+		vrLoc = 205;
+	};
+	20F57C26144789D900BA3DCA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 20F57C1F1447787E00BA3DCA /* IPMenulet.h */;
+		name = "IPMenulet.h: 17";
+		rLen = 0;
+		rLoc = 345;
+		rType = 0;
+		vrLen = 302;
+		vrLoc = 0;
+	};
+	20F57C27144789D900BA3DCA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 20F57C1F1447787E00BA3DCA /* IPMenulet.h */;
+		name = "IPMenulet.h: 12";
+		rLen = 0;
+		rLoc = 231;
+		rType = 0;
+		vrLen = 302;
+		vrLoc = 0;
+	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 20F57C0914474B9700BA3DCA /* iTunes Current Track */;
@@ -61,9 +162,9 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					341,
+					539,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -78,8 +179,18 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 340216727;
-			PBXWorkspaceStateSaveDate = 340216727;
+			PBXPerProjectTemplateStateSaveDate = 340745150;
+			PBXWorkspaceStateSaveDate = 340745150;
+		};
+		perUserProjectItems = {
+			2091223F144F5BBF00F77377 /* PBXTextBookmark */ = 2091223F144F5BBF00F77377 /* PBXTextBookmark */;
+			2091225C144F74B600F77377 /* PBXTextBookmark */ = 2091225C144F74B600F77377 /* PBXTextBookmark */;
+			2091225D144F74B600F77377 /* PBXTextBookmark */ = 2091225D144F74B600F77377 /* PBXTextBookmark */;
+			2091225E144F74B600F77377 /* PBXTextBookmark */ = 2091225E144F74B600F77377 /* PBXTextBookmark */;
+			2091225F144F74B600F77377 /* PBXTextBookmark */ = 2091225F144F74B600F77377 /* PBXTextBookmark */;
+			20F57C25144789D900BA3DCA = 20F57C25144789D900BA3DCA /* PBXTextBookmark */;
+			20F57C26144789D900BA3DCA = 20F57C26144789D900BA3DCA /* PBXTextBookmark */;
+			20F57C27144789D900BA3DCA = 20F57C27144789D900BA3DCA /* PBXTextBookmark */;
 		};
 		sourceControlManager = 20F57C1A14474BA000BA3DCA /* Source Control */;
 		userBuildSettings = {

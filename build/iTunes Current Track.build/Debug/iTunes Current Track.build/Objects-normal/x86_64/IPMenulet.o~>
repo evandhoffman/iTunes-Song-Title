@@ -1,2 +1,3 @@
-/Users/evan/Documents/iTunes Current Track/IPMenulet.m: In function '-[IPMenulet updateIPAddress:]':
-/Users/evan/Documents/iTunes Current Track/IPMenulet.m:38: warning: 'stringWithContentsOfURL:' is deprecated (declared at /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h:380)
+/Users/evan/Documents/iTunes Current Track/IPMenulet.m: In function '-[IPMenulet updateSongTitle:]':
+/Users/evan/Documents/iTunes Current Track/IPMenulet.m:39: warning: local declaration of 'iTunes' hides instance variable
+/Users/evan/Documents/iTunes Current Track/IPMenulet.m:41: warning: local declaration of 'iTunes' hides instance variable
