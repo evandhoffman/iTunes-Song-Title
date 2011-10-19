@@ -7,12 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "iTunes.h"
 
 
 @interface IPMenulet : NSObject {
     NSStatusItem *statusItem;
+//	iTunesApplication *iTunes;
 }
 
--(IBAction)updateIPAddress:(id)sender;
+-(IBAction)updateSongTitle:(id)sender;
 
 @end

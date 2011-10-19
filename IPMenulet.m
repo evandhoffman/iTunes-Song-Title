@@ -11,6 +11,7 @@
 
 @implementation IPMenulet
 
+
 -(void)dealloc
 {
     [statusItem release];
@@ -18,27 +19,47 @@
 }
 - (void)awakeFromNib
 {
+	// Listen for track changes
+	NSDistributedNotificationCenter *dnc = [NSDistributedNotificationCenter defaultCenter];
+	[dnc addObserver:self selector:@selector(updateSongTitle:) name:@"com.apple.iTunes.playerInfo" object:nil];
+	
 	statusItem = [[[NSStatusBar systemStatusBar] 
 				   statusItemWithLength:NSVariableStatusItemLength]
 				  retain];
 	[statusItem setHighlightMode:YES];
 	[statusItem setTitle:[NSString 
-						  stringWithString:@"0.0.0.0"]]; 
+						  stringWithString:@"<No Song>"]]; 
 	[statusItem setEnabled:YES];
-	[statusItem setToolTip:@"IPMenulet"];
+	[statusItem setToolTip:@"Song Title Menulet"];
 	
-	[statusItem setAction:@selector(updateIPAddress:)];
+//	[statusItem setAction:@selector(updateSongTitle:)];
 	[statusItem setTarget:self];
 }
 
--(IBAction)updateIPAddress:(id)sender
+-(void)updateSongTitle:(NSNotification *)notification
 {
-	NSString *ipAddr = [NSString stringWithContentsOfURL:
-						[NSURL URLWithString:
-						 @"http://highearthorbit.com/service/myip.php"]];
-	if(ipAddr != NULL)
+	iTunesApplication *iTunes = [SBApplication applicationWithBundleIdentifier:@"com.apple.iTunes"];
+	
+	if ( [iTunes isRunning] ) {
+		
+		iTunesTrack *currentTrack = [iTunes currentTrack];
+		
+		NSString *trackName = [NSString stringWithFormat:@"%@ - %@",[currentTrack artist], [currentTrack name]];
+		
+		if (trackName != NULL) {
+			[statusItem setTitle:
+			 [NSString stringWithString:trackName]]; 
+		} else {
+			[statusItem setTitle:
+			 [NSString stringWithString:@"<Woops>"]]; 			
+		}
+		
+	} else {
 		[statusItem setTitle:
-		 [NSString stringWithString:ipAddr]]; 
+		 [NSString stringWithString:@"<iTunes Not Running>"]]; 
+		
+	}
+	
 }
 
 @end
