@@ -2,51 +2,19 @@
 {
 	089C165DFE840E0CC02AAC07 /* English */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {882, 396}}";
+			sepNavIntBoundsRect = "{{0, 0}, {882, 409}}";
 			sepNavSelRange = "{45, 0}";
 			sepNavVisRange = "{0, 45}";
 		};
 	};
-	201A2B381450B4BB005BD034 /* XCBuildMessageTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "'currentTrack' undeclared (first use in this function)";
-		fRef = 20F57C201447787E00BA3DCA /* IPMenulet.m */;
-		fallbackIsa = XCBuildMessageTextBookmark;
-		rLen = 1;
-		rLoc = 82;
-		rType = 1;
+	20912245144F6B3C00F77377 /* iTunes.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {3239, 6539}}";
+			sepNavSelRange = "{5598, 85}";
+			sepNavVisRange = "{4735, 2275}";
+		};
 	};
-	201A2B731450BF42005BD034 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 20F57C1F1447787E00BA3DCA /* IPMenulet.h */;
-		name = "IPMenulet.h: 14";
-		rLen = 12;
-		rLoc = 229;
-		rType = 0;
-		vrLen = 468;
-		vrLoc = 0;
-	};
-	201A2B841450C2E7005BD034 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 20F57C201447787E00BA3DCA /* IPMenulet.m */;
-		name = "IPMenulet.m: 100";
-		rLen = 0;
-		rLoc = 2871;
-		rType = 0;
-		vrLen = 858;
-		vrLoc = 2115;
-	};
-	201A2B851450C2E7005BD034 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 089C165DFE840E0CC02AAC07 /* English */;
-		name = "InfoPlist.strings: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 45;
-		vrLoc = 0;
-	};
-	201A2B8A1450C312005BD034 /* PBXTextBookmark */ = {
+	209DE3A71450CD2900DA2E92 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 089C165DFE840E0CC02AAC07 /* English */;
 		name = "InfoPlist.strings: 3";
@@ -56,7 +24,17 @@
 		vrLen = 45;
 		vrLoc = 0;
 	};
-	201A2B8B1450C312005BD034 /* PBXTextBookmark */ = {
+	209DE3A91450CD2900DA2E92 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 20912245144F6B3C00F77377 /* iTunes.h */;
+		name = "iTunes.h: 152";
+		rLen = 85;
+		rLoc = 5598;
+		rType = 0;
+		vrLen = 2275;
+		vrLoc = 4735;
+	};
+	209DE3AE1450CD2900DA2E92 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 20F57C201447787E00BA3DCA /* IPMenulet.m */;
 		name = "IPMenulet.m: 28";
@@ -66,22 +44,45 @@
 		vrLen = 1105;
 		vrLoc = 132;
 	};
-	20912245144F6B3C00F77377 /* iTunes.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {3239, 6370}}";
-			sepNavSelRange = "{17677, 0}";
-			sepNavVisRange = "{16899, 2133}";
-		};
-	};
-	2091225C144F74B600F77377 /* PBXTextBookmark */ = {
+	20AF94721450CDDB003B3020 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 20912245144F6B3C00F77377 /* iTunes.h */;
-		name = "iTunes.h: 382";
+		fRef = 20F57C1F1447787E00BA3DCA /* IPMenulet.h */;
+		name = "IPMenulet.h: 16";
 		rLen = 0;
-		rLoc = 17677;
+		rLoc = 286;
 		rType = 0;
-		vrLen = 2133;
-		vrLoc = 16899;
+		vrLen = 597;
+		vrLoc = 44;
+	};
+	20AF94731450CDDB003B3020 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 20F57C201447787E00BA3DCA /* IPMenulet.m */;
+		name = "IPMenulet.m: 118";
+		rLen = 12;
+		rLoc = 3467;
+		rType = 0;
+		vrLen = 1447;
+		vrLoc = 3201;
+	};
+	20AF94B61450CFEE003B3020 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 20F57C201447787E00BA3DCA /* IPMenulet.m */;
+		name = "IPMenulet.m: 123";
+		rLen = 0;
+		rLoc = 3666;
+		rType = 0;
+		vrLen = 1611;
+		vrLoc = 3201;
+	};
+	20AF94B71450CFEE003B3020 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 20F57C201447787E00BA3DCA /* IPMenulet.m */;
+		name = "IPMenulet.m: 28";
+		rLen = 0;
+		rLoc = 461;
+		rType = 0;
+		vrLen = 1105;
+		vrLoc = 132;
 	};
 	20F57C0914474B9700BA3DCA /* iTunes Current Track */ = {
 		isa = PBXExecutable;
@@ -129,16 +130,16 @@
 	};
 	20F57C1F1447787E00BA3DCA /* IPMenulet.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {882, 373}}";
-			sepNavSelRange = "{229, 12}";
-			sepNavVisRange = "{0, 468}";
+			sepNavIntBoundsRect = "{{0, 0}, {882, 442}}";
+			sepNavSelRange = "{286, 0}";
+			sepNavVisRange = "{44, 597}";
 		};
 	};
 	20F57C201447787E00BA3DCA /* IPMenulet.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {712, 1352}}";
-			sepNavSelRange = "{2222, 0}";
-			sepNavVisRange = "{1782, 438}";
+			sepNavIntBoundsRect = "{{0, 0}, {997, 2262}}";
+			sepNavSelRange = "{461, 0}";
+			sepNavVisRange = "{132, 1105}";
 			sepNavWindowFrame = "{{346, 95}, {1056, 704}}";
 		};
 	};
@@ -192,17 +193,17 @@
 					PBXSymbolsDataSource_ReferenceNameID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 340810664;
-			PBXWorkspaceStateSaveDate = 340810664;
+			PBXPerProjectTemplateStateSaveDate = 340839738;
+			PBXWorkspaceStateSaveDate = 340839738;
 		};
 		perUserProjectItems = {
-			201A2B381450B4BB005BD034 /* XCBuildMessageTextBookmark */ = 201A2B381450B4BB005BD034 /* XCBuildMessageTextBookmark */;
-			201A2B731450BF42005BD034 /* PBXTextBookmark */ = 201A2B731450BF42005BD034 /* PBXTextBookmark */;
-			201A2B841450C2E7005BD034 /* PBXTextBookmark */ = 201A2B841450C2E7005BD034 /* PBXTextBookmark */;
-			201A2B851450C2E7005BD034 /* PBXTextBookmark */ = 201A2B851450C2E7005BD034 /* PBXTextBookmark */;
-			201A2B8A1450C312005BD034 /* PBXTextBookmark */ = 201A2B8A1450C312005BD034 /* PBXTextBookmark */;
-			201A2B8B1450C312005BD034 /* PBXTextBookmark */ = 201A2B8B1450C312005BD034 /* PBXTextBookmark */;
-			2091225C144F74B600F77377 /* PBXTextBookmark */ = 2091225C144F74B600F77377 /* PBXTextBookmark */;
+			209DE3A71450CD2900DA2E92 /* PBXTextBookmark */ = 209DE3A71450CD2900DA2E92 /* PBXTextBookmark */;
+			209DE3A91450CD2900DA2E92 /* PBXTextBookmark */ = 209DE3A91450CD2900DA2E92 /* PBXTextBookmark */;
+			209DE3AE1450CD2900DA2E92 /* PBXTextBookmark */ = 209DE3AE1450CD2900DA2E92 /* PBXTextBookmark */;
+			20AF94721450CDDB003B3020 /* PBXTextBookmark */ = 20AF94721450CDDB003B3020 /* PBXTextBookmark */;
+			20AF94731450CDDB003B3020 /* PBXTextBookmark */ = 20AF94731450CDDB003B3020 /* PBXTextBookmark */;
+			20AF94B61450CFEE003B3020 /* PBXTextBookmark */ = 20AF94B61450CFEE003B3020 /* PBXTextBookmark */;
+			20AF94B71450CFEE003B3020 /* PBXTextBookmark */ = 20AF94B71450CFEE003B3020 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 20F57C1A14474BA000BA3DCA /* Source Control */;
 		userBuildSettings = {
