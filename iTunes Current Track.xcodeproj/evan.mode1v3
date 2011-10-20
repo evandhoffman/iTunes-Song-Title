@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>201A2B591450B568005BD034</string>
+						<string>201A2B8B1450C312005BD034</string>
 						<key>history</key>
 						<array>
 							<string>201A2B381450B4BB005BD034</string>
@@ -304,20 +304,14 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 							<array>
-								<string>29B97314FDCFA39411CA2CEA</string>
-								<string>080E96DDFE201D6D7F000001</string>
-								<string>29B97315FDCFA39411CA2CEA</string>
-								<string>29B97317FDCFA39411CA2CEA</string>
-								<string>1DDD58140DA1D0A300B32029</string>
-								<string>29B97323FDCFA39411CA2CEA</string>
-								<string>19C28FACFE9D520D11CA2CBB</string>
+								<string>1C37FBAC04509CD000000102</string>
+								<string>1C37FAAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
+								<string>1CC0EA4004350EF90044410B</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>6</integer>
-									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -359,7 +353,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>IPMenulet.m</string>
+								<string>InfoPlist.strings</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -367,16 +361,17 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>IPMenulet.m</string>
+										<string>InfoPlist.strings</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>201A2B581450B568005BD034</string>
+										<string>201A2B8A1450C312005BD034</string>
 										<key>history</key>
 										<array>
 											<string>2091225C144F74B600F77377</string>
-											<string>201A2B451450B50B005BD034</string>
-											<string>201A2B461450B50B005BD034</string>
+											<string>201A2B731450BF42005BD034</string>
+											<string>201A2B841450C2E7005BD034</string>
+											<string>201A2B851450C2E7005BD034</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -578,9 +573,9 @@
 		<string>201A2B571450B50B005BD034</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>/Users/evan/Documents/iTunes Current Track/iTunes Current Track.xcodeproj</string>
-		<string>20F57C1814474BA000BA3DCA</string>
 		<string>201A2B4A1450B50B005BD034</string>
+		<string>20F57C1814474BA000BA3DCA</string>
+		<string>/Users/evan/Documents/iTunes Current Track/iTunes Current Track.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>125 136 1226 692 0 0 1440 878 </string>

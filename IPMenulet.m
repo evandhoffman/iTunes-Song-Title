@@ -11,10 +11,21 @@
 
 @implementation IPMenulet
 
+//-(id)init {
+//	self = [super init];
+//	if (self != nil) {
+//		[self awakeFromNib];
+//	}
+//	return self;
+//}
 
 -(void)dealloc
 {
     [statusItem release];
+	[theMenu release];
+	[currentTrackMenuItem release];
+	[currentArtistMenuItem release];
+	[currentAlbumMenuItem release];	
 	[super dealloc];
 }
 - (void)awakeFromNib
@@ -31,9 +42,6 @@
 						  stringWithString:@"♪"]]; 
 	[statusItem setEnabled:YES];
 	[statusItem setToolTip:@"Song Title Menulet"];
-	
-	[statusItem setAction:@selector(updateSongTitle:)];
-	[statusItem setTarget:self];
 	
 	// Menu display
 	[statusItem setMenu:theMenu];
@@ -59,13 +67,17 @@
 	[theMenu insertItem:currentArtistMenuItem atIndex:3];
 	[theMenu insertItem:currentAlbumMenuItem atIndex:5];
 	
+	// Update the song info immediately so we don't have to wait for the track to change.
+	[self updateSongTitle:nil];
+	
+	
 }
 
 -(void)updateSongTitle:(NSNotification *)notification
 {
 	iTunesApplication *iTunes = [SBApplication applicationWithBundleIdentifier:@"com.apple.iTunes"];
 	
-	if ( [iTunes isRunning] ) {
+	if ( iTunes != NULL && [iTunes isRunning] ) {
 		
 		iTunesTrack *currentTrack = [iTunes currentTrack];
 				
@@ -85,6 +97,9 @@
 	} else {
 		[statusItem setTitle:
 		 [NSString stringWithString:@"♪?"]]; 
+		[currentTrackMenuItem setTitle:@""]; 
+		[currentArtistMenuItem setTitle:@""]; 
+		[currentAlbumMenuItem setTitle:@""]; 
 		
 	}
 	

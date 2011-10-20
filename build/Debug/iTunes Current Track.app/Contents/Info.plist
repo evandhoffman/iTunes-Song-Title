@@ -38,6 +38,8 @@
 	<string>10M2518</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>10.6</string>
+	<key>LSUIElement</key>
+	<string>1</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
