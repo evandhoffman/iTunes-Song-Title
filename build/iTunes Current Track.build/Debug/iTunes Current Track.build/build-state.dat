@@ -1,7 +1,7 @@
 TiTunes Current Track
 v7
 r0
-t340840400.811435
+t340914749.234255
 cCheck dependencies
 cProcessInfoPlistFile "/Users/evan/Documents/iTunes Current Track/build/Debug/iTunes Current Track.app/Contents/Info.plist" iTunes_Current_Track-Info.plist
 cCopyStringsFile "/Users/evan/Documents/iTunes Current Track/build/Debug/iTunes Current Track.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
@@ -71,10 +71,11 @@ i<Foundation/Foundation.h>
 i"iTunes.h"
 
 N/Users/evan/Documents/iTunes Current Track/IPMenulet.m
-c000000004EA0984D00000000000013A8
-t1319147597
-s5032
+c000000004EA1BAB70000000000001A70
+t1319221943
+s6768
 i"IPMenulet.h"
+i"iTunes.h"
 
 N/Users/evan/Documents/iTunes Current Track/ScriptingBridge.framework/Headers/SBApplication.h
 c000000004E9F341B0000000000000959
@@ -112,7 +113,7 @@ t1319056411
 s497664
 
 N/Users/evan/Documents/iTunes Current Track/build/Debug/iTunes Current Track.app
-t1319147600
+t1319221949
 s102
 
 N/Users/evan/Documents/iTunes Current Track/build/Debug/iTunes Current Track.app/Contents/Info.plist
@@ -120,8 +121,8 @@ t1319144330
 s1367
 
 N/Users/evan/Documents/iTunes Current Track/build/Debug/iTunes Current Track.app/Contents/MacOS/iTunes Current Track
-t1319147600
-s21808
+t1319221949
+s21848
 
 N/Users/evan/Documents/iTunes Current Track/build/Debug/iTunes Current Track.app/Contents/PkgInfo
 t1319144330
@@ -136,8 +137,8 @@ t1319145842
 s6061
 
 N/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/Objects-normal/x86_64/IPMenulet.o
-t1319147600
-s30560
+t1319221949
+s34820
 
 N/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/Objects-normal/x86_64/iTunes Current Track.LinkFileList
 c000000004E97517800000000000001BE
@@ -198,11 +199,11 @@ s1050
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies340840400#340840400#0(0"0(0#1#0"8620471776#0"0#
+lSLF07#2@18"Check dependencies340914748#340914748#0(0"0(0#1#0"8617437568#0"0#
 
 CCompileC "build/iTunes Current Track.build/Debug/iTunes Current Track.build/Objects-normal/x86_64/IPMenulet.o" "/Users/evan/Documents/iTunes Current Track/IPMenulet.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s340840400.369269
-e340840400.770881
+s340914748.681095
+e340914749.104740
 r1
 xCompileC
 xbuild/iTunes Current Track.build/Debug/iTunes Current Track.build/Objects-normal/x86_64/IPMenulet.o
@@ -211,7 +212,7 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@62"Compile /Users/evan/Documents/iTunes Current Track/IPMenulet.m340840400#340840400#0(0"0(0#0#54"/Users/evan/Documents/iTunes Current Track/IPMenulet.m8617385632#1833"    cd "/Users/evan/Documents/iTunes Current Track"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/iTunes Current Track-generated-files.hmap" "-I/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/iTunes Current Track-own-target-headers.hmap" "-I/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/iTunes Current Track-all-target-headers.hmap" -iquote "/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/iTunes Current Track-project-headers.hmap" "-F/Users/evan/Documents/iTunes Current Track/build/Debug" "-F/Users/evan/Documents/iTunes Current Track" "-I/Users/evan/Documents/iTunes Current Track/build/Debug/include" "-I/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/DerivedSources/x86_64" "-I/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/DerivedSources" -include /var/folders/3o/3oarq2AyGIiz2Wd5lCp4gk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iTunes_Current_Track_Prefix-fhbixzpbfjqbznhgylbsmqeczzdx/iTunes_Current_Track_Prefix.pch -c "/Users/evan/Documents/iTunes Current Track/IPMenulet.m" -o "/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/Objects-normal/x86_64/IPMenulet.o"0#
+lSLF07#2@62"Compile /Users/evan/Documents/iTunes Current Track/IPMenulet.m340914748#340914749#0(0"0(0#0#54"/Users/evan/Documents/iTunes Current Track/IPMenulet.m8613549472#1833"    cd "/Users/evan/Documents/iTunes Current Track"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/iTunes Current Track-generated-files.hmap" "-I/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/iTunes Current Track-own-target-headers.hmap" "-I/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/iTunes Current Track-all-target-headers.hmap" -iquote "/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/iTunes Current Track-project-headers.hmap" "-F/Users/evan/Documents/iTunes Current Track/build/Debug" "-F/Users/evan/Documents/iTunes Current Track" "-I/Users/evan/Documents/iTunes Current Track/build/Debug/include" "-I/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/DerivedSources/x86_64" "-I/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/DerivedSources" -include /var/folders/3o/3oarq2AyGIiz2Wd5lCp4gk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iTunes_Current_Track_Prefix-fhbixzpbfjqbznhgylbsmqeczzdx/iTunes_Current_Track_Prefix.pch -c "/Users/evan/Documents/iTunes Current Track/IPMenulet.m" -o "/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/Objects-normal/x86_64/IPMenulet.o"0#
 
 CCompileC "build/iTunes Current Track.build/Debug/iTunes Current Track.build/Objects-normal/x86_64/iTunes_Current_TrackAppDelegate.o" "/Users/evan/Documents/iTunes Current Track/iTunes_Current_TrackAppDelegate.m" normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s340749877.098158
@@ -257,14 +258,14 @@ xEnglish.lproj/InfoPlist.strings
 lSLF07#2@36"Copy English.lproj/InfoPlist.strings340225591#340225592#0(0"0(0#0#74"/Users/evan/Documents/iTunes Current Track/English.lproj/InfoPlist.strings8607596064#390"    cd "/Users/evan/Documents/iTunes Current Track"    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir "/Users/evan/Documents/iTunes Current Track/build/Debug/iTunes Current Track.app/Contents/Resources/English.lproj"0#
 
 CLd "/Users/evan/Documents/iTunes Current Track/build/Debug/iTunes Current Track.app/Contents/MacOS/iTunes Current Track" normal x86_64
-s340840400.770968
-e340840400.808793
+s340914749.104831
+e340914749.231370
 r1
 xLd
 x/Users/evan/Documents/iTunes Current Track/build/Debug/iTunes Current Track.app/Contents/MacOS/iTunes Current Track
 xnormal
 xx86_64
-lSLF07#2@120"Link /Users/evan/Documents/iTunes Current Track/build/Debug/iTunes Current Track.app/Contents/MacOS/iTunes Current Track340840400#340840400#0(0"0(0#0#0"8617911328#711"    cd "/Users/evan/Documents/iTunes Current Track"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/evan/Documents/iTunes Current Track/build/Debug" "-F/Users/evan/Documents/iTunes Current Track/build/Debug" "-F/Users/evan/Documents/iTunes Current Track" -filelist "/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/Objects-normal/x86_64/iTunes Current Track.LinkFileList" -mmacosx-version-min=10.6 -framework Cocoa -framework ScriptingBridge -o "/Users/evan/Documents/iTunes Current Track/build/Debug/iTunes Current Track.app/Contents/MacOS/iTunes Current Track"0#
+lSLF07#2@120"Link /Users/evan/Documents/iTunes Current Track/build/Debug/iTunes Current Track.app/Contents/MacOS/iTunes Current Track340914749#340914749#0(0"0(0#0#0"8608898976#711"    cd "/Users/evan/Documents/iTunes Current Track"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/evan/Documents/iTunes Current Track/build/Debug" "-F/Users/evan/Documents/iTunes Current Track/build/Debug" "-F/Users/evan/Documents/iTunes Current Track" -filelist "/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/Objects-normal/x86_64/iTunes Current Track.LinkFileList" -mmacosx-version-min=10.6 -framework Cocoa -framework ScriptingBridge -o "/Users/evan/Documents/iTunes Current Track/build/Debug/iTunes Current Track.app/Contents/MacOS/iTunes Current Track"0#
 
 CProcessInfoPlistFile "/Users/evan/Documents/iTunes Current Track/build/Debug/iTunes Current Track.app/Contents/Info.plist" iTunes_Current_Track-Info.plist
 s340837130.130356
@@ -302,10 +303,10 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@42"Precompile iTunes_Current_Track_Prefix.pch340749870#340749877#0(0"0(0#0#74"/Users/evan/Documents/iTunes Current Track/iTunes_Current_Track_Prefix.pch8247572369835913216#1710"    cd "/Users/evan/Documents/iTunes Current Track"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/iTunes Current Track-generated-files.hmap" "-I/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/iTunes Current Track-own-target-headers.hmap" "-I/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/iTunes Current Track-all-target-headers.hmap" -iquote "/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/iTunes Current Track-project-headers.hmap" "-F/Users/evan/Documents/iTunes Current Track/build/Debug" "-F/Users/evan/Documents/iTunes Current Track" "-I/Users/evan/Documents/iTunes Current Track/build/Debug/include" "-I/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/DerivedSources/x86_64" "-I/Users/evan/Documents/iTunes Current Track/build/iTunes Current Track.build/Debug/iTunes Current Track.build/DerivedSources" -c "/Users/evan/Documents/iTunes Current Track/iTunes_Current_Track_Prefix.pch" -o /var/folders/3o/3oarq2AyGIiz2Wd5lCp4gk+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/iTunes_Current_Track_Prefix-fhbixzpbfjqbznhgylbsmqeczzdx/iTunes_Current_Track_Prefix.pch.gch0#
 
 CTouch "/Users/evan/Documents/iTunes Current Track/build/Debug/iTunes Current Track.app"
-s340840400.808891
-e340840400.811400
+s340914749.231459
+e340914749.234215
 r1
 xTouch
 x/Users/evan/Documents/iTunes Current Track/build/Debug/iTunes Current Track.app
-lSLF07#2@85"Touch /Users/evan/Documents/iTunes Current Track/build/Debug/iTunes Current Track.app340840400#340840400#0(0"0(0#0#0"8617450080#156"    cd "/Users/evan/Documents/iTunes Current Track"    /usr/bin/touch -c "/Users/evan/Documents/iTunes Current Track/build/Debug/iTunes Current Track.app"0#
+lSLF07#2@85"Touch /Users/evan/Documents/iTunes Current Track/build/Debug/iTunes Current Track.app340914749#340914749#0(0"0(0#0#0"8619936896#156"    cd "/Users/evan/Documents/iTunes Current Track"    /usr/bin/touch -c "/Users/evan/Documents/iTunes Current Track/build/Debug/iTunes Current Track.app"0#
 

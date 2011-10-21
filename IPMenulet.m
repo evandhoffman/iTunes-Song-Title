@@ -7,6 +7,7 @@
 //
 
 #import "IPMenulet.h"
+#import "iTunes.h"
 
 
 @implementation IPMenulet
@@ -84,7 +85,6 @@
 						  keyEquivalent:@""];
 	
 	
-	
 	[currentTrackMenuItem setTarget:self];
 	[currentArtistMenuItem setTarget:self];
 	[currentAlbumMenuItem setTarget:self];
@@ -102,10 +102,13 @@
 	[theMenu insertItem:currentTrackFileName atIndex:12];
 	[theMenu insertItem:currentTrackFileSize atIndex:14];
 	[theMenu insertItem:currentTrackBitrate atIndex:16];
+
+	NSLog(@"Init complete, menu setup");
 	
 	// Update the song info immediately so we don't have to wait for the track to change.
 	[self updateSongTitle:nil];
 	
+	NSLog(@"Initial calling of updateSongTitle");
 	
 }
 
@@ -115,39 +118,83 @@
 	
 	if ( iTunes != NULL && [iTunes isRunning] ) {
 		
-		iTunesFileTrack *currentTrack = (iTunesFileTrack*)[iTunes currentTrack];
+		iTunesTrack *currentTrack = [iTunes currentTrack];
+		NSString *trackLocation = @"?";
 		
 		if (currentTrack != NULL) {
-//			if ([currentTrack class] == [iTunesFileTrack class]) {
-//				iTunesFileTrack *fileTrack = (iTunesFileTrack*)currentTrack;
-//				[currentTrackFileName setTitle:[NSString stringWithFormat:@"%@",[fileTrack location]]]; 
-//			}
+			NSLog(@"Trying to determine location");
+			trackLocation = [NSString stringWithFormat:@"%@",[currentTrack kind]];
 			
-			[statusItem setTitle:@"♪"]; 
+
+//			if ([currentTrack isKindOfClass:[iTunesFileTrack class]]) { // Why doesn't this work?			
+//				NSLog(@"it's a iTunesFileTrack");
+//				trackLocation = [[(iTunesFileTrack*)currentTrack location] absoluteString];
+//			}
+//			if ([[currentTrack className] isEqualToString:@"iTunesURLTrack"]) {
+//				NSLog(@"it's a iTunesURLTrack");
+//				trackLocation = [[(iTunesURLTrack*)currentTrack location] absoluteString];
+//			}
+//			
+			NSLog(@"Updating track name");
+			switch ([iTunes playerState]) {
+				case iTunesEPlSStopped:
+					[statusItem setTitle:@"♪◼"]; 
+					break;
+				case iTunesEPlSPaused:
+					[statusItem setTitle:@"♪‖"]; 
+					break;
+				case iTunesEPlSPlaying:
+					[statusItem setTitle:@"♪▶"]; 
+					break;
+				default:
+					[statusItem setTitle:@"♪"]; 
+					break;
+			}
+		//	[statusItem setTitle:@"♪▶‖◼"]; 
 			[currentTrackMenuItem setTitle:[NSString stringWithString:[currentTrack name]]]; 
+			NSLog(@"Updating track artist");
 			[currentArtistMenuItem setTitle:[NSString stringWithString:[currentTrack artist]]]; 
+			NSLog(@"Updating track album");
 			[currentAlbumMenuItem setTitle:[NSString stringWithString:[currentTrack album]]]; 
-			[currentTrackYear setTitle:[NSString stringWithFormat:@"%d",[currentTrack year]]]; 
-			[currentTrackLength setTitle:[NSString stringWithString:[currentTrack time]]]; 
-//			[currentTrackFileName setTitle:[NSString stringWithString:[[currentTrack location] absoluteString]]]; 
-			[currentTrackFileName setTitle:[NSString stringWithString:@"<wut?>"]]; 
-			[currentTrackFileSize setTitle:[NSString stringWithFormat:@"%0.2f MB",([currentTrack size]/1048576.0)]]; 
+			NSLog(@"Updating track year");
+			[currentTrackYear setTitle:([currentTrack year] > 0) ? [NSString stringWithFormat:@"%d",[currentTrack year]] : @"?"]; 
+			NSLog(@"Updating track time");
+			[currentTrackLength setTitle:([currentTrack time] == nil) ? @"?" : [NSString stringWithString:[currentTrack time]]]; 
+			NSLog(@"Updating track location");
+//			[currentTrackFileName setTitle:[NSString stringWithString:trackLocation]]; 
+			[currentTrackFileName setTitle:[NSString stringWithFormat:@"%@ - %@",[currentTrack className],trackLocation]]; 
+			NSLog(@"Updating track size");
+			[currentTrackFileSize setTitle:([currentTrack size] > 0) ? [NSString stringWithFormat:@"%0.2f MB",([currentTrack size]/1048576.0)] : @"?"]; 
+			NSLog(@"Updating track bitrate");
 			[currentTrackBitrate setTitle:[NSString stringWithFormat:@"%d kbps",[currentTrack bitRate]]]; 
+			NSLog(@"Updated everything");
 		} else {
+			NSLog(@"Unable to determine track title");
 			[statusItem setTitle:
-			 [NSString stringWithString:@"<Woops>"]]; 			
-			[currentTrackMenuItem setTitle:@""]; 
+			 [NSString stringWithString:@"♪!"]]; 			
+			[currentTrackMenuItem setTitle:@"<Unable to determine current track>"]; 
 			[currentArtistMenuItem setTitle:@""]; 
 			[currentAlbumMenuItem setTitle:@""]; 
+			[currentTrackYear setTitle:@""]; 
+			[currentTrackLength setTitle:@""]; 
+			[currentTrackFileName setTitle:@""]; 
+			[currentTrackFileSize setTitle:@""]; 
+			[currentTrackBitrate setTitle:@""]; 
 		}
 		
 	} else {
+		NSLog(@"iTunes not running");
 		[statusItem setTitle:
 		 [NSString stringWithString:@"♪?"]]; 
-		[currentTrackMenuItem setTitle:@""]; 
+		[currentTrackMenuItem setTitle:@"<iTunes not running>"]; 
 		[currentArtistMenuItem setTitle:@""]; 
 		[currentAlbumMenuItem setTitle:@""]; 
-		
+		[currentTrackYear setTitle:@""]; 
+		[currentTrackLength setTitle:@""]; 
+		[currentTrackFileName setTitle:@""]; 
+		[currentTrackFileSize setTitle:@""]; 
+		[currentTrackBitrate setTitle:@""]; 
+
 	}
 	
 }
