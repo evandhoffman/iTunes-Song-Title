@@ -24,6 +24,8 @@
 	NSMenuItem *currentTrackYear;
 	NSMenuItem *currentTrackLength;
 	NSMenuItem *currentTrackBitrate;
+	
+	NSMenuItem *buildDateItem;
 
 	
 }

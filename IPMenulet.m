@@ -44,6 +44,11 @@
 	[statusItem setEnabled:YES];
 	[statusItem setToolTip:@"Song Title Menulet"];
 	
+	
+	// Build date
+	NSString * buildDate = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"DDBuildDate"];
+	
+	
 	// Menu display
 	[statusItem setMenu:theMenu];
 	currentTrackMenuItem = [[NSMenuItem alloc]
@@ -83,6 +88,10 @@
 						  initWithTitle:@"<No Information>"
 						  action:@selector(updateSongTitle:)
 						  keyEquivalent:@""];
+	buildDateItem = [[NSMenuItem alloc]
+					 initWithTitle:[NSString stringWithFormat:@"Build date: %@",buildDate]
+						  action:@selector(updateSongTitle:)
+						  keyEquivalent:@""];
 	
 	
 	[currentTrackMenuItem setTarget:self];
@@ -93,6 +102,8 @@
 	[currentTrackFileSize setTarget:self];
 	[currentTrackLength setTarget:self];
 	[currentTrackBitrate setTarget:self];
+
+	[buildDateItem setTarget:self];
 	
 	[theMenu insertItem:currentTrackMenuItem atIndex:1];
 	[theMenu insertItem:currentArtistMenuItem atIndex:3];
@@ -102,6 +113,7 @@
 	[theMenu insertItem:currentTrackFileName atIndex:12];
 	[theMenu insertItem:currentTrackFileSize atIndex:14];
 	[theMenu insertItem:currentTrackBitrate atIndex:16];
+	[theMenu insertItem:buildDateItem atIndex:17];
 
 	NSLog(@"Init complete, menu setup");
 	
