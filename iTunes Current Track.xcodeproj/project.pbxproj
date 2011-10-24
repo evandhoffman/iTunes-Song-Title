@@ -137,6 +137,7 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				201BFB2214560A2400E91415 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -183,6 +184,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		201BFB2214560A2400E91415 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print DDBuildNumber\" iTunes_Current_Track-Info.plist)\nbuildNumber=$(($buildNumber + 1))\nbuildDate=`date +%Y-%m-%d-%H:%M:%S`\n/usr/libexec/PlistBuddy -c \"Set :DDBuildNumber $buildNumber\" iTunes_Current_Track-Info.plist\n/usr/libexec/PlistBuddy -c \"Set :DDBuildDate $buildDate\" iTunes_Current_Track-Info.plist\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D11072C0486CEB800E47090 /* Sources */ = {
