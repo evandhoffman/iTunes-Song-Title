@@ -151,22 +151,22 @@
 					break;
 			}
 		//	[statusItem setTitle:@"♪▶‖◼"]; 
-			[currentTrackMenuItem setTitle:[NSString stringWithString:[currentTrack name]]]; 
+			[currentTrackMenuItem setTitle:([currentTrack name] == nil) ? @"" : [NSString stringWithString:[currentTrack name]]]; 
 			NSLog(@"Updating track artist");
-			[currentArtistMenuItem setTitle:[NSString stringWithString:[currentTrack artist]]]; 
+			[currentArtistMenuItem setTitle:([currentTrack name] == nil) ? @"" : [NSString stringWithString:[currentTrack artist]]]; 
 			NSLog(@"Updating track album");
-			[currentAlbumMenuItem setTitle:[NSString stringWithString:[currentTrack album]]]; 
+			[currentAlbumMenuItem setTitle:([currentTrack name] == nil) ? @"" : [NSString stringWithString:[currentTrack album]]]; 
 			NSLog(@"Updating track year");
 			[currentTrackYear setTitle:([currentTrack year] > 0) ? [NSString stringWithFormat:@"%d",[currentTrack year]] : @"?"]; 
 			NSLog(@"Updating track time");
 			[currentTrackLength setTitle:([currentTrack time] == nil) ? @"?" : [NSString stringWithString:[currentTrack time]]]; 
 			NSLog(@"Updating track location");
 //			[currentTrackFileName setTitle:[NSString stringWithString:trackLocation]]; 
-			[currentTrackFileName setTitle:[NSString stringWithFormat:@"%@ - %@",[currentTrack className],trackLocation]]; 
+			[currentTrackFileName setTitle:([currentTrack name] == nil) ? @"" : [NSString stringWithFormat:@"%@ - %@",[currentTrack className],trackLocation]]; 
 			NSLog(@"Updating track size");
 			[currentTrackFileSize setTitle:([currentTrack size] > 0) ? [NSString stringWithFormat:@"%0.2f MB",([currentTrack size]/1048576.0)] : @"?"]; 
 			NSLog(@"Updating track bitrate");
-			[currentTrackBitrate setTitle:[NSString stringWithFormat:@"%d kbps",[currentTrack bitRate]]]; 
+			[currentTrackBitrate setTitle:([currentTrack name] == nil) ? @"" : [NSString stringWithFormat:@"%d kbps",[currentTrack bitRate]]]; 
 			NSLog(@"Updated everything");
 		} else {
 			NSLog(@"Unable to determine track title");
